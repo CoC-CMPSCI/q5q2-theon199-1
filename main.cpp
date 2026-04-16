@@ -10,9 +10,14 @@ int main()
     cout << "Enter your exponent: ";
     cin >> M;
 
-    cout << N << " to power number: ";
+   cout << N << " to power number: ";
 
-    // TODO
+   //Init the output variable, so that it does not flag as unintialized
+    int output = 1;
+    for (int i = 0; i < M; i++) {
+        cout << output << " ";
+        output *= N;
+    }
 
     cout << endl;
 
